@@ -14,3 +14,5 @@ Check it out here:
 https://crypto-website-created-with-react.vercel.app/
 
 Images:
+
+![lorem1](https://github.com/Wencho8/Crypto-Website-created-with-React-/assets/103704812/a390bfe6-563e-4fe5-8faa-ce1d4ed98104)
