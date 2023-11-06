@@ -6,6 +6,7 @@ This project was created with the use of the next features:
 * React.js
 * Coingecko API
 * HeroIconsPackage
+* React-fast-marquee & react-scroll
 * TailwindCSS
 * CSS modules for more complex animations.
 
