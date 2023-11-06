@@ -1,0 +1,202 @@
+.container {
+  position:absolute ;
+  width: 50%;
+  height: 50%;
+  }
+  
+  .neonRectangle {
+    --angle: 0deg;
+    
+    width: 100%;
+    height: 120%;
+    margin: auto;
+    border: 1px solid #000;
+    border-color: #004e95;
+    box-shadow: inset -1px -1px 20px rgba(255,74,169,.3), 2px 2px 20px rgba(255,74,169,.32), inset 3px 3px 20px -2px rgba(0,78,149,.48), -8px 1px 18px rgba(0,78,149,.42);
+    /*border-image: linear-gradient(to right, #3966FF, #FF599C) 1;*/
+    border-image: linear-gradient(var(--angle), #3966FF, #FF599C) 1;
+    animation: 4s rotate linear infinite;
+  }
+
+  @keyframes rotate {
+    to {
+      --angle: 360deg;
+    }
+  }
+
+  @property --angle {
+    syntax: '<angle>';
+    initial-value: 0deg;
+    inherits: false;
+  }
+
+  @font-face {
+    font-family: 'Pixel';
+    src: url('../fonts/PixelOperatorMono.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+
+
+  /*Texto */
+  .logoName {
+    font-family: 'Pixel';
+    font-size: 3.4em;
+    font-weight: 700;
+    color: #d7dadd;
+    text-align: center;
+    text-shadow: 0 0 10px #2649b3, 0 0 20px #0f80dc, 0 0 40px #ca2f6d, 0 0 80px #FF599C, 0 0 90px #350d92, 0 0 100px #9c18ba, 0 0 150px #c4dae3;
+    -webkit-animation: animate 5s linear 1;
+    -moz-animation: animate 5s linear 1;
+    -o-animation: animate 5s linear 1;
+    animation: animate 5s linear 1;
+
+  }
+
+  h2{
+    font-family: 'Pixel';
+    font-size: 1.2em;
+  }
+
+  @media screen and (max-width: 600px) {
+    .container {
+      position:absolute ;
+      display: flex;
+      justify-content: start;
+      width: 100%;
+      height: 30%;
+      }
+      
+      .neonRectangle {
+        --angle: 0deg;
+        
+        width: 100%;
+        height: 80%;
+        margin-top: 20%;
+        border: 1px solid #000;
+        border-color: #004e95;
+        box-shadow: inset -1px -1px 20px rgba(255,74,169,.3), 2px 2px 20px rgba(255,74,169,.32), inset 3px 3px 20px -2px rgba(0,78,149,.48), -8px 1px 18px rgba(0,78,149,.42);
+        /*border-image: linear-gradient(to right, #3966FF, #FF599C) 1;*/
+        border-image: linear-gradient(var(--angle), #3966FF, #FF599C) 1;
+        animation: 4s rotate linear infinite;
+      }
+    
+      @keyframes rotate {
+        to {
+          --angle: 360deg;
+        }
+      }
+    
+      @property --angle {
+        syntax: '<angle>';
+        initial-value: 0deg;
+        inherits: false;
+      }
+    
+  }
+
+
+
+
+@media screen and (min-width: 1800px) {
+  .container {
+    position:absolute ;
+    width: 50%;
+    height: 50%;
+    }
+    
+    .neonRectangle {
+      --angle: 0deg;
+      
+      width: 100%;
+      height: 110%;
+      margin: auto;
+      border: 1px solid #000;
+      border-color: #004e95;
+      box-shadow: inset -1px -1px 20px rgba(255,74,169,.3), 2px 2px 20px rgba(255,74,169,.32), inset 3px 3px 20px -2px rgba(0,78,149,.48), -8px 1px 18px rgba(0,78,149,.42);
+      /*border-image: linear-gradient(to right, #3966FF, #FF599C) 1;*/
+      border-image: linear-gradient(var(--angle), #3966FF, #FF599C) 1;
+      animation: 4s rotate linear infinite;
+    }
+  
+    @keyframes rotate {
+      to {
+        --angle: 360deg;
+      }
+    }
+  
+    @property --angle {
+      syntax: '<angle>';
+      initial-value: 0deg;
+      inherits: false;
+    }
+  
+}
+
+
+@media screen and (max-width: 500px) {
+  .logoName {
+    font-size: 3em;
+  }
+
+  h2{
+    font-size: 0.6em;
+  }
+}
+
+@media screen and (min-width: 2400px) {
+  .logoName {
+    font-size: 15em;
+  }
+
+  h2{
+    font-size: 4em;
+  }
+}
+
+
+  /*aplicar animacion al texto de arriba*/
+
+  @keyframes animate {
+    0% {
+      color: #d7dadd;
+      text-shadow: 0 0 10px #2649b3, 0 0 20px #0f80dc, 0 0 40px #ca2f6d, 0 0 80px #FF599C, 0 0 90px #350d92, 0 0 100px #9c18ba, 0 0 150px #c4dae3;
+    }
+    10% {
+      color: #d7dadd;
+      text-shadow: none;
+    }
+    30% {
+      color: #d7dadd;
+      text-shadow: 0 0 10px #2649b3, 0 0 20px #0f80dc, 0 0 40px #ca2f6d, 0 0 80px #FF599C, 0 0 90px #350d92, 0 0 100px #9c18ba, 0 0 150px #c4dae3;
+      scale: 1.1;
+    }
+    50% {
+      color: #d7dadd;
+      text-shadow: none;
+    }
+    70% {
+      color: #d7dadd;
+      text-shadow: 0 0 10px #2649b3, 0 0 20px #0f80dc, 0 0 40px #ca2f6d, 0 0 80px #FF599C, 0 0 90px #350d92, 0 0 100px #9c18ba, 0 0 150px #c4dae3;
+      
+    }
+    90% {
+      color: #d7dadd;
+      text-shadow: none;
+      scale: 1;
+    }
+    100% {
+      color: #d7dadd;
+      text-shadow: 0 0 10px #2649b3, 0 0 20px #0f80dc, 0 0 40px #ca2f6d, 0 0 80px #FF599C, 0 0 90px #350d92, 0 0 100px #9c18ba, 0 0 150px #c4dae3;
+    }
+  }
+
+   
+
+  
+  
+  
+  
+  
+  

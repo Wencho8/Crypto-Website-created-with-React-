@@ -1,0 +1,38 @@
+.container {
+    --angle: 0deg;
+
+    position: absolute;
+    margin-left: auto;;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    margin-top: -1%;
+    width: 80%;
+    height: 16%;
+    border: 2px solid #000;
+    border-color: #004e95;
+    box-shadow: inset -1px -1px 20px rgba(255,74,169,.3), 2px 2px 20px rgba(255,74,169,.32), inset 3px 3px 20px -2px rgba(0,78,149,.48), -8px 1px 18px rgba(0,78,149,.42);
+    border-image: linear-gradient(var(--angle), #3966FF, #FF599C) 1;
+    animation: 4s rotate linear infinite;
+  }
+
+
+  @keyframes rotate {
+    to {
+      --angle: 360deg;
+    }
+  }
+
+  @property --angle {
+    syntax: '<angle>';
+    initial-value: 0deg;
+    inherits: false;
+  }
+
+  @media screen and (max-width: 960px) {
+    /*Oculto el div*/
+    .container {
+      display: none;
+
+    }
+}
